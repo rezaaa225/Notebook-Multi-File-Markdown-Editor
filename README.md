@@ -1,5 +1,6 @@
 # Notebook-Multi-File-Markdown-Editor
 1. Project Choice
+
 I chose the project idea **"The Notebook - Multi-File Markdown/Rich Text Editor"**.
 
 A lightweight, browser-based Markdown note-taking application with a three-panel layout: file list, live editor, and rendered preview.
