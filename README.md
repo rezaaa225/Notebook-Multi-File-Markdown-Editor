@@ -64,38 +64,60 @@ Prompt 5:
 
 5. Instructions
 
-🚀 Setup
-Download or clone the repository:
-git clone <your-repo-link>
-Ensure these files are included:
-index.html
-style.css
-script.js
+Setup:
 
-▶️ Run the App
-Open index.html
-Launch it directly in Google Chrome
-No server or installation required
+- Download or clone the repository:
 
-✨ How to Use
-➕ Click New to create a note
-🖱️ Click a note to select and edit it
-✏️ Use toolbar for formatting:
-Bold / Italic / Underline
-Font style / size / color
-Text alignment
-🔍 Use search bar to filter notes
-🗑️ Click delete icon to remove note
-✏️ Click rename icon to change title
-📄 Click export to download PDF
+- git clone <your-repo-link>
 
-💾 Storage
-All notes are saved automatically using LocalStorage (JSON format)
-Data persists even after closing the browser
+- Ensure these files are included:
+
+- index.html
+
+- style.css
+
+- script.js
+
+Run the App:
+
+- Open index.html
+
+- Launch it directly in Google Chrome
+
+- No server or installation required
+
+How to Use:
+
+- Click New to create a note
+
+- Click a note to select and edit it
+
+Use toolbar for formatting:
+
+- Bold / Italic / Underline
+
+- Font style / size / color
+
+Text alignment:
+
+- Use search bar to filter notes
+
+- Click delete icon to remove note
+
+- Click rename icon to change title
+
+- Click export to download PDF
+
+
+Storage
+
+- All notes are saved automatically using LocalStorage (JSON format)
+
+- Data persists even after closing the browser
 
 ---
 
-6. Challenges & Iterations
+6. Challenges & Iterations:
 
 ⚠️ Challenges Faced
 1. Managing Multiple Notes in a Single Page App
@@ -115,6 +137,7 @@ Keeping the rich text editor and live preview panel in sync required careful eve
 Standard <textarea> elements do not support formatting like bold, font changes, or colors.
 
 🔄 Iterations & Improvements
+
 ✔️ Solution to Note Management:
 
 Switched to a JavaScript array of objects (JSON structure) to manage notes efficiently with unique IDs.
