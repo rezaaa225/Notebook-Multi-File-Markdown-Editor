@@ -5,6 +5,8 @@ I chose the project idea **"The Notebook - Multi-File Markdown/Rich Text Editor"
 
 A lightweight, browser-based Markdown note-taking application with a three-panel layout: file list, live editor, and rendered preview.
 
+---
+
 2. Justification of Tools
 
 - **HTML**: Used to structure the layout of the application, including the sidebar, editor, and preview sections.
@@ -15,6 +17,8 @@ A lightweight, browser-based Markdown note-taking application with a three-panel
 - **html2pdf.js**: Used to export notes as downloadable PDF files.
 
 These tools were chosen because they are lightweight, browser-compatible, and ideal for building a fully functional frontend-only application.
+
+---
 
 3. High-Level Approach
 
@@ -55,3 +59,74 @@ Prompt 4:
 
 Prompt 5:
 "Implement a feature to export the current note as a PDF using html2pdf.js."
+
+---
+
+5. Instructions
+
+🚀 Setup
+Download or clone the repository:
+git clone <your-repo-link>
+Ensure these files are included:
+index.html
+style.css
+script.js
+
+▶️ Run the App
+Open index.html
+Launch it directly in Google Chrome
+No server or installation required
+
+✨ How to Use
+➕ Click New to create a note
+🖱️ Click a note to select and edit it
+✏️ Use toolbar for formatting:
+Bold / Italic / Underline
+Font style / size / color
+Text alignment
+🔍 Use search bar to filter notes
+🗑️ Click delete icon to remove note
+✏️ Click rename icon to change title
+📄 Click export to download PDF
+
+💾 Storage
+All notes are saved automatically using LocalStorage (JSON format)
+Data persists even after closing the browser
+
+---
+
+6. Challenges & Iterations
+
+⚠️ Challenges Faced
+1. Managing Multiple Notes in a Single Page App
+
+Initially, handling multiple notes dynamically was complex because all notes needed to be updated without refreshing the page.
+
+2. Data Persistence Without a Backend
+
+Since the project is fully frontend-based, there was no database to store notes permanently.
+
+3. Synchronizing Editor and Preview
+
+Keeping the rich text editor and live preview panel in sync required careful event handling.
+
+4. Implementing Rich Text Formatting
+
+Standard <textarea> elements do not support formatting like bold, font changes, or colors.
+
+🔄 Iterations & Improvements
+✔️ Solution to Note Management:
+
+Switched to a JavaScript array of objects (JSON structure) to manage notes efficiently with unique IDs.
+
+✔️ Solution to Data Storage:
+
+Implemented LocalStorage, allowing notes to persist even after refreshing or closing the browser.
+
+✔️ Solution to Live Syncing:
+
+Used input and contenteditable events to update the preview in real time whenever the user types.
+
+✔️ Solution to Rich Text Editing:
+
+Replaced textarea with a contenteditable div, enabling advanced formatting using document.execCommand().
