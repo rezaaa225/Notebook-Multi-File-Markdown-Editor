@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notebook App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>📒 Notebook</h2>
+      <button onclick="createNote()">+ New</button>
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search notes..."
+        oninput="searchNotes()"
+      >
+    </div>
+
+    <ul id="fileList"></ul>
+  </aside>
+
+  <!-- Editor -->
+  <section class="editor-section">
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <select onchange="changeFont(this.value)">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+
+      <select onchange="changeFontSize(this.value)">
+        <option value="12px">12</option>
+        <option value="16px" selected>16</option>
+        <option value="20px">20</option>
+        <option value="24px">24</option>
+      </select>
+
+      <button onclick="formatText('bold')">B</button>
+      <button onclick="formatText('italic')">I</button>
+      <button onclick="formatText('underline')">U</button>
+
+      <input type="color" onchange="changeColor(this.value)">
+
+      <button onclick="formatText('justifyLeft')">⬅</button>
+      <button onclick="formatText('justifyCenter')">⬆</button>
+      <button onclick="formatText('justifyRight')">➡</button>
+
+      <button onclick="exportPDF()">📄 Export</button>
+    </div>
+
+    <div id="editor" contenteditable="true"></div>
+
+  </section>
+
+  <!-- Preview -->
+  <section class="preview-section">
+    <div class="panel-header">Preview</div>
+    <div id="preview"></div>
+  </section>
+
+</div>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

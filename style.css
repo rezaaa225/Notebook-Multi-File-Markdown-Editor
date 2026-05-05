@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+}
+
+/* Layout */
+.app {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #111827;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-header button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+}
+
+/* Notes list */
+#fileList {
+  list-style: none;
+  padding: 10px;
+}
+
+#fileList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#fileList li:hover {
+  background: #1f2937;
+}
+
+#fileList li.active {
+  background: #2563eb;
+}
+
+/* Editor */
+.editor-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#editor {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  outline: none;
+  overflow-y: auto;
+}
+
+#editor:empty:before {
+  content: "Start typing your notes...";
+  color: #9ca3af;
+}
+
+/* Preview */
+.preview-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 12px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+#preview {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  overflow-y: auto;
+}
