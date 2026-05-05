@@ -1,5 +1,5 @@
 # Notebook-Multi-File-Markdown-Editor
-1. Project Choice
+**1. Project Choice**
 
 I chose the project idea **"The Notebook - Multi-File Markdown/Rich Text Editor"**.
 
@@ -7,7 +7,7 @@ A lightweight, browser-based Markdown note-taking application with a three-panel
 
 ---
 
-2. Justification of Tools
+**2. Justification of Tools**
 
 - **HTML**: Used to structure the layout of the application, including the sidebar, editor, and preview sections.
 - **CSS**: Used to create a clean, modern, and responsive UI inspired by professional productivity tools.
@@ -20,7 +20,7 @@ These tools were chosen because they are lightweight, browser-compatible, and id
 
 ---
 
-3. High-Level Approach
+**3. High-Level Approach**
 
 The application was developed using a **modular frontend architecture** with a single-page design.
 
@@ -41,7 +41,7 @@ Logic Flow:
 
 ---
 
-4. Final Prompts
+**4. Final Prompts**
 
 The project was assisted using iterative AI prompting. The final prompts used were:
 
@@ -62,7 +62,7 @@ Prompt 5:
 
 ---
 
-5. Instructions
+**5. Instructions**
 
 Setup:
 
@@ -117,39 +117,40 @@ Storage
 
 ---
 
-6. Challenges & Iterations:
+**6. Challenges & Iterations:**
 
-⚠️ Challenges Faced
-1. Managing Multiple Notes in a Single Page App
+Challenges Faced:
 
-Initially, handling multiple notes dynamically was complex because all notes needed to be updated without refreshing the page.
+1. Managing Multiple Notes in a Single Page App:
 
-2. Data Persistence Without a Backend
+- Initially, handling multiple notes dynamically was complex because all notes needed to be updated without refreshing the page.
 
-Since the project is fully frontend-based, there was no database to store notes permanently.
+2. Data Persistence Without a Backend:
 
-3. Synchronizing Editor and Preview
+- Since the project is fully frontend-based, there was no database to store notes permanently.
 
-Keeping the rich text editor and live preview panel in sync required careful event handling.
+3. Synchronizing Editor and Preview:
 
-4. Implementing Rich Text Formatting
+- Keeping the rich text editor and live preview panel in sync required careful event handling.
 
-Standard <textarea> elements do not support formatting like bold, font changes, or colors.
+4. Implementing Rich Text Formatting:
 
-🔄 Iterations & Improvements
+- Standard <textarea> elements do not support formatting like bold, font changes, or colors.
 
-✔️ Solution to Note Management:
+Iterations & Improvements:
 
-Switched to a JavaScript array of objects (JSON structure) to manage notes efficiently with unique IDs.
+1. Solution to Note Management:
 
-✔️ Solution to Data Storage:
+- Switched to a JavaScript array of objects (JSON structure) to manage notes efficiently with unique IDs.
 
-Implemented LocalStorage, allowing notes to persist even after refreshing or closing the browser.
+2. Solution to Data Storage:
 
-✔️ Solution to Live Syncing:
+- Implemented LocalStorage, allowing notes to persist even after refreshing or closing the browser.
 
-Used input and contenteditable events to update the preview in real time whenever the user types.
+3. Solution to Live Syncing:
 
-✔️ Solution to Rich Text Editing:
+- Used input and contenteditable events to update the preview in real time whenever the user types.
 
-Replaced textarea with a contenteditable div, enabling advanced formatting using document.execCommand().
+4. Solution to Rich Text Editing:
+
+- Replaced textarea with a contenteditable div, enabling advanced formatting using document.execCommand().
