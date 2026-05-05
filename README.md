@@ -48,7 +48,7 @@ Logic Flow:
 
 The project was assisted using iterative AI prompting.
 
-The project was developed using an iterative series of prompts, starting with creating a browser-based note-taking application using HTML, CSS, and JavaScript with a three-panel layout (sidebar, editor, and preview) and storing notes in localStorage using JSON format. The functionality was then expanded to allow users to create, rename, delete, and select notes dynamically. Next, the editor was upgraded to support rich text formatting, including bold, italic, underline, font size, font family, and text color using execCommand. Additional features were implemented such as real-time search to filter notes by title and content, and finally, a PDF export feature was added using html2pdf.js to allow users to download their notes.
+“Build a complete browser-based note-taking application using HTML, CSS, and JavaScript with a clean, professional three-panel layout consisting of a sidebar, a rich text editor, and a live preview panel. The application should allow users to create, select, rename, edit, and delete multiple notes, with all data stored persistently in the browser using localStorage in JSON format. The editor should support rich text formatting features such as bold, italic, underline, font size, font family, text color, and alignment using contenteditable and execCommand. Add a feature to export the currently selected note as a PDF using html2pdf.js. The design should be modern and user-friendly, with responsive layout, proper state management, and clean, maintainable code.”
 
 ---
 
