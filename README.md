@@ -46,22 +46,9 @@ Logic Flow:
 
 **4. Final Prompts**
 
-The project was assisted using iterative AI prompting. The final prompts used were:
+The project was assisted using iterative AI prompting.
 
-Prompt 1:
-"Create a browser-based note-taking app using HTML, CSS, and JavaScript with a three-panel layout (sidebar, editor, preview). Store notes using localStorage in JSON format."
-
-Prompt 2:
-"Add functionality to allow users to create, rename, delete, and select notes dynamically in JavaScript."
-
-Prompt 3:
-"Upgrade the editor to support rich text formatting like bold, italic, underline, font size, font family, and text color using execCommand."
-
-Prompt 4:
-"Add search functionality to filter notes by title and content in real time."
-
-Prompt 5:
-"Implement a feature to export the current note as a PDF using html2pdf.js."
+The project was developed using an iterative series of prompts, starting with creating a browser-based note-taking application using HTML, CSS, and JavaScript with a three-panel layout (sidebar, editor, and preview) and storing notes in localStorage using JSON format. The functionality was then expanded to allow users to create, rename, delete, and select notes dynamically. Next, the editor was upgraded to support rich text formatting, including bold, italic, underline, font size, font family, and text color using execCommand. Additional features were implemented such as real-time search to filter notes by title and content, and finally, a PDF export feature was added using html2pdf.js to allow users to download their notes.
 
 ---
 
